@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODESIGN</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: #1a1a1a; /* Dark background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            background-image: url('your-background-image.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header nav ul li {
+            margin-left: 20px;
+        }
+
+        .header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            z-index: 1;
+        }
+
+        .content h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            font-family: serif; /* Example serif font */
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .content a {
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer .contact {
+            margin-top: 10px;
+        }
+
+        .footer .contact a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5em;
+        }
+
+        .social-icons {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">PRODESIGN</div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Detail</a></li>
+                <li><a href="#">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h1>Special Design</h1>
+            <p>A beautiful website template, that can be used as a personal website, or any similar website.</p>
+            <a href="#">About Us →</a>
+        </div>
+        <div class="scroll-down">Scroll ↓</div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2000 Copyright Prodesign</p>
+        <div class="contact">
+            <a href="mailto:email@company.com">email@company.com</a>
+            <span>+123456789</span>
+        </div>
+    </footer>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>

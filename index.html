@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: black;
+          position: relative;
+          margin-left: 18%;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        #logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            position: relative;
+            margin-right: 150px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            
+        }
+        .city {
+            position: relative;
+            margin-right: 50px;
+            padding: 50px;
+        }
+        .city h1 {
+            font-size: 2.5em;
+        }
+        .world {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            font-size: large;
+            padding: 15px 30px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .brands {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        hr {
+            border-top: 3px solid #ccc;
+            width: 50%;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul {
+                flex-direction: column;
+                display: none;
+                text-align: center;
+                gap: 10px;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .city h1 {
+                font-size: 2em;
+                position: relative;
+                margin-left: 400px;
+            }
+            .brands {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        #menu{
+            position: relative;
+            margin-left: 40px;
+        }
+        .brands h3{
+            position: relative;
+            margin-right: 100px;
+        }
+        .as{
+           
+            margin-left: 40%;
+            
+        }
+        #ko{
+         font-size: 25px;
+         font-stretch: 20px;
+}
+#ok{
+  
+  
+    font-size: 25px;
+    font-stretch: 20px;
+    padding-right: 30px;
+  
+}
+#yu{
+    margin-top: -60%;
+    
+   
+    width: 30%;
+    margin-left: 600px;
+
+   
+}
+    </style> 
+</head>
+
+    
+<body>
+    
+    <header>
+     
+        <div id="logo">avocode</div>
+        <nav>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <ul id="menu">
+                <li>PRODUCT</li>
+                <li>SOLUTIONS</li>
+                <li>LEARN</li>
+                <li>PRICING</li>
+                <li>DOWNLOAD</li>
+                <li>BLOG</li>
+            </ul>
+        </nav>
+    
+    </header>
+    <section class="city">
+        <h1>Scale design & <br>dev <br> operations with <br> Enterprise</h1>
+        <p>Sync design and development workflows in one powerful tool <br> while making your procurement department happy.</p>
+        <button class="world  btn-btn outlinr primary" >CONTACT US</button>
+    </section>
+    <img src="111.jpg" id="yu">
+    <div class="brands">
+        <h3>Google</h3>
+        <h3>Congstar</h3>
+        <h3>Panasonic</h3>
+        <h3>American Eagle</h3>
+        <h3>PWC</h3>
+    </div>
+    <hr style="margin-left: 200px;">
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+    <div class="as">
+        <a href="page2.html"> <i class="fa-solid fa-arrow-left fa-beat" id="ok"></i></a>
+        
+          <a href="page2.html"><i class="fa-solid fa-arrow-right fa-beat" id="ko"></i></a>
+    
+</div>
+ 
+</body>
+
+
+</html>
